@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title> Room Availability</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Check Room Availability</h2>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="checkInDate">Check-in Date:</label>
+          <input type="date" class="form-control" id="checkInDate">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="roomType">Room Type:</label>
+          <select class="form-control" id="roomType">
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="checkRoomAvailability()">Check Availability</button>
+    </form>
+
+    <div id="availableRoomsSection" class="mt-4">
+      <h3>Available Rooms:</h3>
+
+      <div class="card-deck">
+            <div class="card">
+              <img src="room3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Room</h5>
+                <p class="card-text"> hotel room is a private space within a hotel establishment, typically furnished to provide lodging, comfort, and amenities for guests during their stay.</p>
+              </div>
+              <div class="card-footer">
+                <a href="details.html" class="btn btn-primary mx-auto d-block">More Details</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="room1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Room</h5>
+                <p class="card-text"> hotel room is a private space within a hotel establishment, typically furnished to provide lodging, comfort, and amenities for guests during their stay.</p>
+              </div>
+              <div class="card-footer">
+                <a href="details.html" class="btn btn-primary mx-auto d-block">More Details</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="room.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Room</h5>
+                <p class="card-text"> hotel room is a private space within a hotel establishment, typically furnished to provide lodging, comfort, and amenities for guests during their stay.</p>
+              </div>
+              <div class="card-footer">
+                <a href="details.html" class="btn btn-primary mx-auto d-block">More Details</a>
+              </div>
+            </div>
+          </div>     
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
